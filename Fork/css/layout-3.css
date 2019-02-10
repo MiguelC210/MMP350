@@ -1,0 +1,45 @@
+#container{
+    background-color: olive;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    grid-gap: 1em;
+    
+    grid-template-areas:
+        "header header signup login"
+        "menu menu menu menu"
+        "post main main main"
+        "footer footer footer footer";
+}
+
+#title{
+    grid-area: header;
+}
+
+#menu{
+    grid-area: menu;
+}
+
+#posts{
+    grid-area: main;
+}
+
+#post{
+    grid-area: post;
+}
+
+#login{
+    grid-area: login;
+}
+
+#sign-up{
+    grid-area: signup
+}
+
+li{
+    display: inline;
+}
