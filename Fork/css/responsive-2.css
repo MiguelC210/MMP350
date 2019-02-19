@@ -1,0 +1,44 @@
+/* mobile style rule */
+@media (max-width: 400px) {
+    #container{
+        background-color: darkkhaki;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "menu"
+            "post"
+            "main"
+            "login"
+            "signup";
+    }
+    
+    #menu-list{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #menu-list li{
+        flex-basis: 80px;
+    }
+    
+}
+
+/* tablet style rule */
+@media (min-width: 401px) and (max-width: 800px) {
+	#container {
+        background-color: bisque;
+		width: 100%;
+		grid-template-areas: 
+			"header login signup"
+			"post main main"
+			"menu menu menu";
+	}
+    
+    #menu-list{
+        justify-content: flex-start;
+    }
+    
+    #menu-list li{
+        flex-basis: 150px;
+    }
+}

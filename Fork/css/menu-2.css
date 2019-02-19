@@ -1,0 +1,14 @@
+/* menu flex box style */
+
+#menu-list{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+#menu-list li{
+    flex-basis: 40px;
+}
