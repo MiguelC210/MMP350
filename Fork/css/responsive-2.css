@@ -29,9 +29,9 @@
         background-color: bisque;
 		width: 100%;
 		grid-template-areas: 
-			"header login signup"
-			"post main main"
-			"menu menu menu";
+			"header header login signup"
+			"post main main main"
+			"menu menu menu menu";
 	}
     
     #menu-list{
