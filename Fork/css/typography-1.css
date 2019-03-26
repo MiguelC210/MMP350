@@ -11,7 +11,7 @@ font-family: 'Raleway', sans-serif;
 body {
 	font-size: 16px;
 	line-height: 1.10;
-/*	background-color: #3D5467;*/
+	background-color: #3D5467;
 }
 
 
@@ -25,9 +25,17 @@ body {
 
 #title h1 {
 	margin: 0;
-/*	color: #AD343E;*/
-/*	text-shadow: 2px 2px 0 black;*/
+	color: #AD343E;
+	text-shadow: 2px 2px 0 black;
     font-size: 56px;
+}
+
+#title h2{
+    margin-top: -25px;
+    margin-left: 155px;
+    color: #AD343E;
+    text-shadow: 2px 2px 0 black;
+    font-size: 54px;
 }
 
 #login *, #sign-up * {
@@ -35,16 +43,15 @@ body {
 }
 
 #menu a {
-/*	color: #01295F;*/
+	color: #01295F;
 	padding: 0.1em;
 	font-size: 1.25em;
 	transition: background-color 300ms ease-in;
 }
 
 #menu a:hover {
-/*	background-color:  #686963;*/
+	background-color:  #686963;
 }
-
 
 #write-post {
 	font-size: 1.5rem;
@@ -56,8 +63,8 @@ body {
 #submit-post {
 	font-size: 1.5rem;
 	width: 100%;
-/*	color: white;*/
-/*	background-color: #686963;*/
+	color: white;
+	background-color: #686963;
 	border: 0;
 	outline: 0;
 	padding: 0.25em 0;
@@ -76,7 +83,7 @@ body {
 }
 
 .post-info {
-/*	color: darkblue;*/
+	color: darkblue;
 }
 
 .author {
@@ -84,7 +91,7 @@ body {
 }
 
 .date {
-/*	color: black;*/
+	color: black;
 }
 
 /* viewport sizing */
