@@ -54,6 +54,9 @@ body {
     font-size: 30px;
 }
 
+#books h1, h2, h3{
+     font-family: 'Raleway', sans-serif;
+}
 /*
 #menu a:hover {
 	background-color:  #3D5467
@@ -126,6 +129,10 @@ body {
         color: #AD343E;
     }
     
+    #title h2{
+        margin-left: 130px;
+    }
+    
     .post-text{
         font-size: 2vmax;
     }
@@ -150,11 +157,19 @@ body {
 	padding: 0.25em 0;
     }
     
+    #welcome h1{
+        font-size: 24px;
+    }
+    
 }
 /* Tablet */
 @media (min-width: 401px) and (max-width: 800px){
     #title h1{
         font-size: 12vw;
+    }
+    
+    #title h2{
+        margin-left: 130px;
     }
     
     #write-post{
