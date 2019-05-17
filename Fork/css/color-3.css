@@ -1,9 +1,10 @@
 /* color scheme */
 
 :root{
-    --main-color: #EF946C; /* orange */
+    --main-color: #AD343E; /* red*/
     --second-color: #DB5375; /* pink */
-    --third-color: #01295F; /* navy blue */ 
+    --third-color: #01295F; /* navy blue */
+    --fourth-color: white; /* White color for boxes forums*/
 }
 
     #title {
@@ -12,7 +13,7 @@
 }
 
 #login input, #sign-up input {
-	background: var(--second-color);
+	background: var(--fourth-color);
 	border: none;
 	padding: 0.25em;
 }
@@ -58,8 +59,3 @@ input::placeholder {
 .post .date {
 	color: var(--second-color);
 }
-
-/*
-body{
-        background-color: var(--main-color);
-    }*/

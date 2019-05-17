@@ -26,7 +26,7 @@ body {
 #title h1 {
 	margin: 0;
 	color: #AD343E;
-	text-shadow: 2px 2px 0 black;
+	text-shadow: 4px 4px 0 #01295F;
     font-size: 56px;
 }
 
@@ -34,7 +34,7 @@ body {
     margin-top: -25px;
     margin-left: 155px;
     color: #AD343E;
-    text-shadow: 2px 2px 0 black;
+    text-shadow: 4px 3px 0 #01295F;
     font-size: 54px;
 }
 
@@ -42,16 +42,23 @@ body {
 	font-size: 1rem;
 }
 
-#menu a {
+#menu a, .download a {
 	color: #01295F;
-	padding: 0.1em;
+	padding: -0.3em;
 	font-size: 1.25em;
 	transition: background-color 300ms ease-in;
 }
 
-#menu a:hover {
-	background-color:  #686963;
+#welcome h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
 }
+
+/*
+#menu a:hover {
+	background-color:  #3D5467
+}
+*/
 
 #write-post {
 	font-size: 1.5rem;
@@ -62,12 +69,12 @@ body {
 
 #submit-post {
 	font-size: 1.5rem;
-	width: 100%;
+	width: 99.5%;
 	color: white;
 	background-color: #686963;
 	border: 0;
 	outline: 0;
-	padding: 0.25em 0;
+	padding: .34em 0;
 }
 
 #submit-login{
@@ -110,12 +117,17 @@ body {
 
 /* Mobile */
 @media (max-width: 400px){
+    #container{
+    background-color: #F2AF29; 
+    }
+    
     #title h1{
         font-size: 16vw;
+        color: #AD343E;
     }
     
     .post-text{
-        font-size: 3vmax;
+        font-size: 2vmax;
     }
     
     #submit-login{

@@ -5,18 +5,41 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAnPKxGZXIeF6vNgd206ciiZqjS7eOFO7A",
+        authDomain: "bmcc-courses.firebaseapp.com",
+        databaseURL: "https://bmcc-courses.firebaseio.com",
+        projectId: "bmcc-courses",
+        storageBucket: "bmcc-courses.appspot.com",
+        messagingSenderId: "658358842825"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
 </head>
-<body>
+<body id="index">
 	<div id="container">
 		<!-- title / logo -->
 		<div id="title">
 			<h1>BMCC</h1>
             <h2>Courses</h2>
 		</div>
+        
+        <!-- user info -->
+        <div id="user-info">
+        <div id="display-name"></div>
+            <button id="logout">Log Out</button>
+        </div>
 		
 		<!-- login -->
 		<div id="login">
-			<input type="text" id="login-username" placeholder="Username/Email">
+			<input type="text" id="login-email" placeholder="Username/Email">
 			<input type="password" id="login-password" placeholder="Password">
 			<button id="submit-login">Login</button>
 		</div>
@@ -32,48 +55,23 @@
 		<!-- navigation / menu -->
 		<div id="menu">
 			<ul id="menu-list">
-				<li><a href="">Home</a></li>
-				<li><a href="">Profile</a></li>
-				<li><a href="">Courses</a></li>
-                <li><a href="">Settings</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a id="profile-link" href="user.html">Profile</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="books.html">Books</a></li>
 			</ul>
 		</div>
+        
 		
-		<!-- posting content -->
-		<div id="post">
-			<textarea id="write-post" placeholder="What's happening?"></textarea>
-			<button id="submit-post">Post</button>
-		</div>
+
 	
 		<!-- feed/posts/users content -->
-		<div id="posts">
-			<!-- post 1 -->
-			<div class="post">
-				<div class="post-text">I skate to where the puck is going to be, not to where it has been.</div>
-				<div class="post-info">
-					by <span class="author">Wayne Gretzky</span>
-					on <span class="date">January 30, 2000</span>
-				</div>
-			</div>
-
-			<!-- post 2 -->
-			<div class="post">
-				<div class="post-text">There’s one thing I’m really good at, and that’s hitting the ball over a net, in a box. I’m excellent.</div>
-				<div class="post-info">
-					by <span class="author">Serena Williams</span>
-					on <span class="date">November 1, 2020</span>
-				</div>
-			</div>
-			
-			<!-- post 3 -->
-			<div class="post">
-				<div class="post-text">I've missed more than 9000 shots in my career. I've lost almost 300 games. 26 times, I've been trusted to take the game winning shot and missed. I've failed over and over and over again in my life. And that is why I succeed..</div>
-				<div class="post-info">
-					by <span class="author">Michael Jordan</span>
-					on <span class="date">December 31, 1999</span>
-				</div>
-			</div>
-		</div>
-	</div>
+		<div id="welcome">
+	       <h1 id="welcome">Welcome New and Current Students who are entering BMCC this upcoming semester on this website you will be able to communicate with BMCC Students and are able to discuss about the course one may have taken or that want to find more about the course. </h1>
+            <img src="pictures/bmcc.jpg" style="display: block; margin-left: auto; margin-right: auto;" />
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    
 </body>
 </html>

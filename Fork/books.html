@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+	<title>layout</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAnPKxGZXIeF6vNgd206ciiZqjS7eOFO7A",
+        authDomain: "bmcc-courses.firebaseapp.com",
+        databaseURL: "https://bmcc-courses.firebaseio.com",
+        projectId: "bmcc-courses",
+        storageBucket: "bmcc-courses.appspot.com",
+        messagingSenderId: "658358842825"
+      };
+      firebase.initializeApp(config);
+    </script>
+    
+</head>
+<body>
+	<div id="container">
+		<!-- title / logo -->
+		<div id="title">
+			<h1>BMCC</h1>
+            <h2>Courses</h2>
+		</div>
+        
+        <!-- user info -->
+        <div id="user-info">
+        <div id="display-name"></div>
+            <button id="logout">Log Out</button>
+        </div>
+		
+		<!-- login -->
+		<div id="login">
+			<input type="text" id="login-email" placeholder="Username/Email">
+			<input type="password" id="login-password" placeholder="Password">
+			<button id="submit-login">Login</button>
+		</div>
+		
+		<!-- sign up -->
+		<div id="sign-up">
+			<input type="text" id="sign-up-username" placeholder="Username">
+			<input type="email" id="sign-up-email" placeholder="Email">
+			<input type="password" id="sign-up-password" placeholder="Password">
+			<button id="submit-sign-up">Sign Up</button>
+		</div>
+
+		<!-- navigation / menu -->
+		<div id="menu">
+			<ul id="menu-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a id="profile-link" href="user.html">Profile</a></li>
+				<li><a href="courses.html">Courses</a></li>
+                <li><a href="books.html">Books</a></li>
+			</ul>
+		</div>
+		
+		<!-- posting content -->
+		<div id="books">
+			<h1>Current books that are free to download for certain courses you may need.</h1>
+            <h2>HTML &amp; CSS</h2>
+            <h3>By Jon Duckett</h3>
+           <img src="pictures/book1.jpg">
+            <p><div class="download"><a href="textbooks/HTML_CSS.pdf" download>Download file here</a></div></p>
+            
+            <h2>Network+ Guide to Networks</h2>
+            <h3>By Tamara Dean</h3>
+        <img src="pictures/network.jpg">
+        <p><div class="download"><a href="textbooks/Network.pdf" download>Download file here</a></div></p>
+    
+    <h2>Starting out with JAVA</h2>
+            <h3>By Tony Gaddis</h3>
+        <img src="pictures/java.jpg">
+        <p><div class="download"><a href="textbooks/Java.pdf" download>Download file here</a></div></p>
+        
+		</div>
+	</div>
+		<!-- feed/posts/users content -->
+		<div id="posts"></div>
+    <script src="js/auth.js"></script>
+</body>
+</html>
